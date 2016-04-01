@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+    remote = require('electron').remote
+    config = remote.require('./lib/config');
+    remoteStringify = remote.require('./lib/utils').remoteStringify;
+    Object.remoteClone = function(obj) {
+      return JSON.parse(remoteStringify(obj));
+    };
+    Object.remoteCloneNoError = function(obj) {
+      return JSON.parse(remote.require('./lib/utils').remoteStringify(obj));
+    };
+  </script>
+</head>
+<body>
+  <div>
+    It works!
+  </div>
+</body>
+</html>

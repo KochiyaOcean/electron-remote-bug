@@ -1,0 +1,11 @@
+{
+  "name": "electron-remote-bug",
+  "version": "1.0.0",
+  "description": "Reproduce bugs of remote module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KochiyaOcean",
+  "license": "GPL"
+}
